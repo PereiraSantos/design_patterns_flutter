@@ -4,7 +4,7 @@ class BuilderImp implements Partner {
   const BuilderImp();
   @override
   String description() =>
-      'separar a construção de um objeto complexo de sua representação para que o mesmo processo de construção possa criar representações diferentes ';
+      'Separar a construção de um objeto complexo de sua representação para que o mesmo processo de construção possa criar representações diferentes ';
 
   @override
   String title() => 'Builder';

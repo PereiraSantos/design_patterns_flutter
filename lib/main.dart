@@ -3,6 +3,7 @@ import 'package:pattern/creational/abstract_factory/page/abstract_factor_page.da
 import 'package:pattern/creational/builder/page/builder_exmple.dart';
 import 'package:pattern/creational/factory_method/page/factory_method_exemple.dart';
 import 'package:pattern/creational/prototype/page/protoype_exemple.dart';
+import 'package:pattern/creational/singleton/page/singleton_exemple.dart';
 import 'package:pattern/dashboard/pages/home.dart';
 
 void main() {
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         '/abstract': (context) => const AbstractFactoryPage(),
         '/builder': (context) => const BuilderExemple(),
         '/factory': (context) => const FactoryMethodExemple(),
-        '/prototype': (context) => const PrototypeExemple()
+        '/prototype': (context) => const PrototypeExemple(),
+        '/singleton': (context) => const SingletonExemple(),
       },
     );
   }
