@@ -5,6 +5,7 @@ import 'package:pattern/creational/factory_method/page/factory_method_exemple.da
 import 'package:pattern/creational/prototype/page/protoype_exemple.dart';
 import 'package:pattern/creational/singleton/page/singleton_exemple.dart';
 import 'package:pattern/dashboard/pages/home.dart';
+import 'package:pattern/structural/page/adapter_exemple.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.white,
-          background: Colors.white,
+          //  background: Colors.white,
           onPrimary: Colors.red,
           onTertiary: Colors.orange,
         ),
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         '/factory': (context) => const FactoryMethodExemple(),
         '/prototype': (context) => const PrototypeExemple(),
         '/singleton': (context) => const SingletonExemple(),
+        '/adapter': (context) => const AdapterExemple(),
       },
     );
   }
