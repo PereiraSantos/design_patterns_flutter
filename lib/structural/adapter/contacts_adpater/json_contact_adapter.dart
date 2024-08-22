@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:pattern/structural/contact/contact.dart';
+import 'package:pattern/structural/adapter/contact/contact.dart';
 import 'package:pattern/structural/adapter/json_contacts_api.dart';
 
 abstract interface class IContactsAdapter {

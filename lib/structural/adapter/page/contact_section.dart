@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pattern/structural/contact/contact.dart';
-import 'package:pattern/structural/contacts_adpater/json_contact_adapter.dart';
+import 'package:pattern/structural/adapter/contact/contact.dart';
+import 'package:pattern/structural/adapter/contacts_adpater/json_contact_adapter.dart';
 
 class ContactSection extends StatefulWidget {
   const ContactSection({super.key, required this.adapter, required this.headerText});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pattern/dashboard/usercases/adapter.dart';
 
-import 'package:pattern/structural/contacts_adpater/json_contact_adapter.dart';
-import 'package:pattern/structural/contacts_adpater/xml_contacts_adapter.dart';
-import 'package:pattern/structural/page/contact_section.dart';
+import 'package:pattern/structural/adapter/contacts_adpater/json_contact_adapter.dart';
+import 'package:pattern/structural/adapter/contacts_adpater/xml_contacts_adapter.dart';
+import 'package:pattern/structural/adapter/page/contact_section.dart';
 
 class AdapterExemple extends StatelessWidget {
   const AdapterExemple({super.key});

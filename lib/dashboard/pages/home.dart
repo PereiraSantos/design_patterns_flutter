@@ -5,6 +5,7 @@ import 'package:pattern/dashboard/componet/text_custom.dart';
 import 'package:pattern/dashboard/usercases/adapter.dart';
 import 'package:pattern/dashboard/usercases/abstract_factory.dart';
 import 'package:pattern/dashboard/usercases/builder.dart';
+import 'package:pattern/dashboard/usercases/composite.dart';
 import 'package:pattern/dashboard/usercases/factory_method.dart';
 import 'package:pattern/dashboard/usercases/prototype.dart';
 import 'package:pattern/dashboard/usercases/singleton.dart';
@@ -59,6 +60,10 @@ class Home extends StatelessWidget {
                       onTap: () => Navigator.pushNamed(context, '/adapter'),
                       child: TextCustom(label: const Adapter().title())),
                   Description(label: const Adapter().description()),
+                  GestureDetector(
+                      onTap: () => Navigator.pushNamed(context, '/composite'),
+                      child: TextCustom(label: const Composite().title())),
+                  Description(label: const Composite().description()),
                 ],
               ),
             )

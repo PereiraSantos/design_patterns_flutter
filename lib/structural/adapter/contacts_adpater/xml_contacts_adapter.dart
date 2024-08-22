@@ -1,6 +1,6 @@
 import 'package:pattern/structural/adapter/xml_contacts_api.dart';
-import 'package:pattern/structural/contact/contact.dart';
-import 'package:pattern/structural/contacts_adpater/json_contact_adapter.dart';
+import 'package:pattern/structural/adapter/contact/contact.dart';
+import 'package:pattern/structural/adapter/contacts_adpater/json_contact_adapter.dart';
 import 'package:xml/xml.dart';
 
 class XmlContactsAdapter implements IContactsAdapter {
