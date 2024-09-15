@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pattern/behavioral/template_method/studant_section.dart';
 import 'package:pattern/behavioral/template_method/students_json_bmi_calculator.dart';
 import 'package:pattern/behavioral/template_method/students_xml_bmi_calculator.dart';
+import 'package:pattern/behavioral/template_method/teenager_studant_json_bmi_calculator.dart';
 
 class TemplateMethodExample extends StatelessWidget {
   const TemplateMethodExample();

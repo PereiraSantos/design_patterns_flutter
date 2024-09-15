@@ -5,8 +5,8 @@ import 'package:pattern/behavioral/template_method/json_students_api.dart';
 import 'package:pattern/behavioral/template_method/student.dart';
 import 'package:pattern/behavioral/template_method/students_bmi_calculator.dart';
 
-class StudentsJsonBmiCalculator extends StudentsBmiCalculator {
-  const StudentsJsonBmiCalculator({
+class TeenageStudentsJsonBmiCalculator extends StudentsBmiCalculator {
+  const TeenageStudentsJsonBmiCalculator({
     this.api = const JsonStudentsApi(),
   });
 
@@ -30,5 +30,11 @@ class StudentsJsonBmiCalculator extends StudentsBmiCalculator {
     }).toList();
 
     return studentsList;
+  }
+
+  @override
+  @protected
+  List<Student> doStudentsFiltering(List<Student> studentList) {
+    return studentList.where((student) => student.age > 12 && student.age < 20).toList();
   }
 }
